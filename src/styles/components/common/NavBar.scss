@@ -1,0 +1,33 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    nav {
+        flex-grow: 1;
+        text-align: right;
+        
+        ul {
+            display: inline-block;
+            list-style-type: none;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #555;
+    }
+
+    p {
+        color: #555;
+    }
+}
