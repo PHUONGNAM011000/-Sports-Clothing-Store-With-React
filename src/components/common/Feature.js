@@ -1,4 +1,6 @@
 import Category from "./Category";
+import LastProduct from "./LastProduct";
+import Offer from "./Offer";
 import Product from './Product';
 
 const Feature = () => { 
@@ -6,6 +8,8 @@ const Feature = () => {
         <>
             <Category />
             <Product />
+            <LastProduct />
+            <Offer />
         </>
     );
 }

@@ -23,7 +23,7 @@ const Product = () => {
           </div>
           <div className="col-4">
             <img src={Product2} alt="" />
-            <h4 className="title">Red Printed T-Shirt</h4>
+            <h4>Red Printed T-Shirt</h4>
             <div className="rating">
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
@@ -35,7 +35,7 @@ const Product = () => {
           </div>
           <div className="col-4">
             <img src={Product3} alt="" />
-            <h4 className="title">Red Printed T-Shirt</h4>
+            <h4>Red Printed T-Shirt</h4>
             <div className="rating">
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
@@ -47,7 +47,7 @@ const Product = () => {
           </div>
           <div className="col-4">
             <img src={Product4} alt="" />
-            <h4 className="title">Red Printed T-Shirt</h4>
+            <h4>Red Printed T-Shirt</h4>
             <div className="rating">
               <i className="fa fa-star"></i>
               <i className="fa fa-star"></i>
