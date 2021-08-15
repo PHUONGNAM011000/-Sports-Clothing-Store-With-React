@@ -1,0 +1,32 @@
+#brands {
+  margin: 100px auto;
+
+  .small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-right: 25px;
+
+    .row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 70px;
+
+      .col-5 {
+        width: 160px;
+
+        img {
+          width: 100%;
+          cursor: pointer;
+          filter: grayscale(100%);
+        }
+
+        img:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
