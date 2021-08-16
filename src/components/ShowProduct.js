@@ -10,12 +10,12 @@ import Product9 from '../assets/images/product-9.jpg';
 import Product10 from '../assets/images/product-10.jpg';
 import Product11 from '../assets/images/product-11.jpg';
 import Product12 from '../assets/images/product-12.jpg';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import NavBar from './common/NavBar';
 import Footer from './common/Footer';
 
 const ShowProduct = () => {
-  const [product, setProduct] = useState([
+  const product = [
     {
       id: 1,
       image: Product1,
@@ -88,7 +88,7 @@ const ShowProduct = () => {
       name: 'CRUCIATE TEE',
       price: '250.000',
     },
-  ]);
+  ];
 
   return (
     <>
