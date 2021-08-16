@@ -11,23 +11,23 @@
     padding-right: 25px;
 
     .title {
-        text-align: center;
-        margin: 0 auto 80px;
-        position: relative;
-        line-height: 60px;
-        color: #555;
+      text-align: center;
+      margin: 0 auto 80px;
+      position: relative;
+      line-height: 60px;
+      color: #555;
     }
 
     .title::after {
-        content: "";
-        background: #ff523b;
-        width: 80px;
-        height: 5px;
-        border-radius: 5px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+      content: '';
+      background: #ff523b;
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .row {
@@ -46,24 +46,80 @@
 
         img {
           width: 100%;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
         }
 
         h4 {
-            color: #555;
-            font-weight: normal;
+          color: #555;
+          font-weight: normal;
         }
 
         p {
-            font-size: 14px;
+          font-size: 14px;
         }
 
         .fa {
-            color: #ff523b;
+          color: #ff523b;
         }
       }
 
       .col-4:hover {
-          transform: translateY(-5px);
+        transform: translateY(-5px);
+      }
+    }
+
+    .row-2 {
+      justify-content: space-between;
+      margin: 100px auto 50px;
+
+      /* Thiết kẻ thẻ select */
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #e9e2e2;
+        background-image: none;
+        font-size: 17px;
+      }
+      .select {
+        position: relative;
+        display: flex;
+        width: 15em;
+        height: 3em;
+        line-height: 3;
+        background: #fefefe;
+        overflow: hidden;
+        border-radius: 0.25em;
+      }
+      select {
+        flex: 1;
+        padding: 0 0.5em;
+        color: #000;
+        cursor: pointer;
+      }
+      /* thiết kế dấu mũi tên */
+      .select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 1em;
+        background: #ccc;
+        cursor: pointer;
+        pointer-events: none;
+        -webkit-transition: 0.25s all ease;
+        -o-transition: 0.25s all ease;
+        transition: 0.25s all ease;
+        color: white;
+      }
+      /* Hiệu ứng hover */
+      .select:hover::after {
+        color: Gainsboro;
       }
     }
   }

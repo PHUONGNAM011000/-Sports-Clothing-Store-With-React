@@ -45,12 +45,24 @@
   .footer-col-2 {
     width: 180px;
     margin-bottom: 20px;
+
+    img {
+        cursor: pointer;
+    }
   }
 
   .footer-col-3,
   .footer-col-4 {
     flex-basis: 12%;
     text-align: center;
+  }
+
+  .footer-col-3 li {
+      cursor: pointer;
+  }
+
+  .footer-col-3 li:hover {
+    color: #fff;
   }
 
   ul {
@@ -63,6 +75,8 @@
 
   .app-logo img {
     width: 140px;
+    margin: 5px;
+    cursor: pointer;
   }
 
   hr {

@@ -17,7 +17,7 @@ const Header = () => {
               excepturi voluptates doloribus quisquam culpa. Qui a at aspernatur
               ad?
             </p>
-            <Link className="btn" to='#'>
+            <Link className="btn" to=''>
                 Explore Now &#8594;
             </Link>
           </div>

@@ -1,17 +1,20 @@
 import HomePage from './components/HomePage';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Product from './components/ShowProduct';
 
-function App(){
+function App() {
   return (
-  <>
-    <Router>
-      <HomePage />
-      <Switch>
-        <Route path="/" exact/>
-      </Switch>
-    </Router>
-  </>
-  )
-};
+    <>
+      <Router>
+        <Route path="/" exact>
+          <HomePage />
+        </Route>
+        <Route path="/product">
+          <Product />
+        </Route>
+      </Router>
+    </>
+  );
+}
 
 export default App;

@@ -8,7 +8,7 @@
 @import './components/common/Brands.scss';
 @import './components/common/Footer.scss';
 
-* {
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,3 +17,4 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+

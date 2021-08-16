@@ -9,7 +9,7 @@ const Product = () => {
       <div className="small-container">
         <h2 className="title">Feature Products</h2>
         <div className="row">
-          <div className="col-4">
+          <div className="col-4 hover">
             <img src={Product1} alt="" />
             <h4>Red Printed T-Shirt</h4>
             <div className="rating">
