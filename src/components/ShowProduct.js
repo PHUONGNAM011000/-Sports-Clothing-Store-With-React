@@ -106,7 +106,7 @@ const ShowProduct = () => {
       const sorted =
         type === 'priceDecrease' || type === 'nameDecrease'
           ? [...products].sort((a, b) => b[sortProperty] - a[sortProperty])
-          : [...products].sort((a, b) => a[sortProperty] - b[sortProperty]);
+          : [...products].sort((a, b) => b[sortProperty] - a[sortProperty]).reverse();
 
       setData(sorted);
     };
@@ -115,7 +115,7 @@ const ShowProduct = () => {
   }, [sortType]);
 
   return (
-    <>
+    <div id="show-product">
       <NavBar />
 
       {/* product */}
@@ -130,10 +130,10 @@ const ShowProduct = () => {
                 onChange={(e) => setSortType(e.target.value)}
               >
                 <option disabled>Thứ Tự</option>
-                <option value="priceDecrease">Giá giảm dần</option>
-                <option value="nameDecrease">Tên Z-A</option>
                 <option value="priceIncrease">Giá tăng dần</option>
+                <option value="priceDecrease">Giá giảm dần</option>
                 <option value="nameIncrease">Tên A-Z</option>
+                <option value="nameDecrease">Tên Z-A</option>
               </select>
             </div>
           </div>
@@ -157,7 +157,7 @@ const ShowProduct = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
