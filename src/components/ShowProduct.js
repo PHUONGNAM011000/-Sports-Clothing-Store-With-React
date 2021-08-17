@@ -79,7 +79,7 @@ const ShowProduct = () => {
     {
       id: 11,
       image: Product11,
-      name: 'WEALTH TRAP TEE',
+      name: 'ADVENTURE TIME TEE',
       price: '220.000',
     },
     {
@@ -104,9 +104,29 @@ const ShowProduct = () => {
       };
       const sortProperty = types[type];
       const sorted =
-        type === 'priceDecrease' || type === 'nameDecrease'
+        sortProperty === 'name'
+          ? type === 'nameDecrease'
+            ? [...products]
+                .sort((a, b) =>
+                  a[sortProperty] > b[sortProperty]
+                    ? 1
+                    : b[sortProperty] > a[sortProperty]
+                    ? -1
+                    : 0
+                )
+                .reverse()
+            : [...products].sort((a, b) =>
+                a[sortProperty] > b[sortProperty]
+                  ? 1
+                  : b[sortProperty] > a[sortProperty]
+                  ? -1
+                  : 0
+              )
+          : type === 'priceDecrease'
           ? [...products].sort((a, b) => b[sortProperty] - a[sortProperty])
-          : [...products].sort((a, b) => b[sortProperty] - a[sortProperty]).reverse();
+          : [...products]
+              .sort((a, b) => b[sortProperty] - a[sortProperty])
+              .reverse();
 
       setData(sorted);
     };
