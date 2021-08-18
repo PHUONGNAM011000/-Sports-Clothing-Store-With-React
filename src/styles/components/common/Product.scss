@@ -1,8 +1,6 @@
 #product {
   max-width: 1080px;
   margin: auto;
-  padding-right: 25px;
-  padding-right: 25px;
 
   .small-container {
     max-width: 1080px;
@@ -72,6 +70,10 @@
     .row-2 {
       justify-content: space-between;
       margin: 100px auto 50px;
+      border-top: 1px solid #b5b5b5;
+      border-bottom: 1px solid #b5b5b5;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
       /* Thiết kẻ thẻ select */
       select {
@@ -122,5 +124,11 @@
         color: Gainsboro;
       }
     }
+  }
+}
+
+#show-product {
+  .color-bar {
+    background: #f0ebeb;
   }
 }

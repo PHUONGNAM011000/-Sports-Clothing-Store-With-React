@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div id="header">
+    <div id="header" className="block--skewed-right">
       <div className="container">
         <NavBar />
         <div className="row">

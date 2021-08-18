@@ -1,7 +1,9 @@
 #offer {
     background: radial-gradient(#fff, #ffd6d6);
     margin-top: 80px;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
   .small-container {
     max-width: 1080px;

@@ -10,12 +10,21 @@ const Category = () => {
           <div className="row">
             <div className="col-3">
               <img src={Category1} alt="Category1" />
+              <div className="layer">
+                <h3>Good Price</h3>
+              </div>
             </div>
             <div className="col-3">
               <img src={Category2} alt="Category2" />
+              <div className="layer">
+                <h3>Good Price</h3>
+              </div>
             </div>
             <div className="col-3">
               <img src={Category3} alt="Category3" />
+              <div className="layer">
+                <h3>Good Price</h3>
+              </div>
             </div>
           </div>
         </div>
