@@ -1,39 +1,48 @@
-import logo from '../../assets/images/logo.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 import Cart from '../../assets/images/cart.png';
 
 const NavBar = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
   return (
-    <div className="container-bar color-bar">
-      <div id="container">
-        <div id="navbar">
-          <div className="logo">
-            <Link to="/">
-              <img src={logo} alt="logo" width="125px" />
-            </Link>
+    <div className="container-bar">
+      <nav className="navbar">
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
+            RedStore
+          </NavLink>
+
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className="nav-item" onClick={handleClick}>
+              <NavLink exact to="/product" className="nav-links">
+                Product
+              </NavLink>
+            </li>
+            <li className="nav-item" onClick={handleClick}>
+              <NavLink exact to="#" className="nav-links">
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item" onClick={handleClick}>
+              <NavLink exact to="#" className="nav-links">
+                Blog
+              </NavLink>
+            </li>
+            <li className="nav-item" onClick={handleClick}>
+              <NavLink exact to="#" className="nav-links">
+                Contact us
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? 'fa fa-times' : 'fa fa-bars'}></i>
           </div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/product">Products</Link>
-              </li>
-              <li>
-                <Link to="#">About</Link>
-              </li>
-              <li>
-                <Link to="#">Contact</Link>
-              </li>
-              <li>
-                <Link to="#">Account</Link>
-              </li>
-            </ul>
-            <img src={Cart} alt="Cart" width="30px" height="30px" />
-          </nav>
+          <img src={Cart} alt="cart" width="30px" height="30px" />
         </div>
-      </div>
+      </nav>
     </div>
   );
 };

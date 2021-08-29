@@ -74,8 +74,8 @@
       border-bottom: 1px solid #b5b5b5;
       padding-top: 5px;
       padding-bottom: 5px;
+      margin-left: 15px;
 
-      /* Thiết kẻ thẻ select */
       select {
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -88,6 +88,7 @@
         background-image: none;
         font-size: 17px;
       }
+
       .select {
         position: relative;
         display: flex;
@@ -98,13 +99,14 @@
         overflow: hidden;
         border-radius: 0.25em;
       }
+
       select {
         flex: 1;
         padding: 0 0.5em;
         color: #000;
         cursor: pointer;
       }
-      /* thiết kế dấu mũi tên */
+
       .select::after {
         content: '\25BC';
         position: absolute;
@@ -119,7 +121,7 @@
         transition: 0.25s all ease;
         color: white;
       }
-      /* Hiệu ứng hover */
+
       .select:hover::after {
         color: Gainsboro;
       }

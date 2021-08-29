@@ -17,13 +17,13 @@ const Category = () => {
             <div className="col-3">
               <img src={Category2} alt="Category2" />
               <div className="layer">
-                <h3>Good Price</h3>
+                <h3>Fashion</h3>
               </div>
             </div>
             <div className="col-3">
               <img src={Category3} alt="Category3" />
               <div className="layer">
-                <h3>Good Price</h3>
+                <h3>Modern</h3>
               </div>
             </div>
           </div>
