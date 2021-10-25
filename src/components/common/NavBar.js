@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState } from 'react';  
 import Cart from '../../assets/images/cart.png';
 
 const NavBar = () => {
@@ -22,7 +22,7 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li className="nav-item" onClick={handleClick}>
-              <NavLink exact to="#" className="nav-links">
+              <NavLink exact to="/about" className="nav-links">
                 About
               </NavLink>
             </li>

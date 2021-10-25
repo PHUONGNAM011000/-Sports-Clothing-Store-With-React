@@ -173,6 +173,13 @@ const ShowProduct = () => {
               </div>
             ))}
           </div>
+          <div className="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+          </div>
         </div>
       </div>
 

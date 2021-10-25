@@ -5,8 +5,6 @@
   .small-container {
     max-width: 1080px;
     margin: auto;
-    padding-right: 25px;
-    padding-right: 25px;
 
     .title {
       text-align: center;
@@ -75,6 +73,7 @@
       padding-top: 5px;
       padding-bottom: 5px;
       margin-left: 15px;
+      margin-right: 15px;
 
       select {
         -webkit-appearance: none;
@@ -129,8 +128,3 @@
   }
 }
 
-#show-product {
-  .color-bar {
-    background: #f0ebeb;
-  }
-}
